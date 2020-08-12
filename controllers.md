@@ -283,7 +283,7 @@ You may override the default model route keys by passing an array to the `scoped
 
     use App\Http\Controllers\PostsController;
 
-    Route::resource('users.posts', PostsController::class')->scoped([
+    Route::resource('users.posts', PostsController::class)->scoped([
         'post' => 'slug',
     ]);
 
